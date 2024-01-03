@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Manager</title>
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</head>
+
+<body class="light-blue">
+  <!-- navbar -->
+  <nav class="light-blue accent-2 z-depth-0">
+    <div class="nav-wrapper container">
+      <span class="left white-text">
+        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+      </span>
+      <a href="/" class="right">Contact <span>Manager</span></a>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- sidenav menu -->
+  <ul id="side-menu" class="sidenav side-menu">
+    <li><a href="/" class="subheader">Contact Manager</a></li>
+    <li><a href="/" class="waves-effect">Home</a></li>
+    <li><a href="pages/about.html" class="waves-effect">About</a></li>
+  </ul>
+  <!-- sidenav menu end -->
+
+  <!-- main body -->
+  <div class="contacts container">
+    <div class="grey-text text-darken-1 pk-contact">
+      <div class="contact-image">
+        <img src="img/pkcontacts.png" alt="photo">
+      </div>
+      <div class="contact-detail">
+        <div class="contact-title">Jimmy Neesham</div>
+        <div class="contact-numbers">+123645798</div>
+        <div class="contact-options">
+          <i class="material-icons">call</i>
+          <i class="material-icons">delete_outline</i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="center">
+    <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
+  <!-- main body end -->
+
+  <!-- add contact form -->
+  <div id="side-form" class="sidenav side-form">
+    <form class="add-contact container section">
+      <h6>New Contact</h6>
+      <div class="divider"></div>
+      <div class="input-field">
+        <input type="text" placeholder="e.g. Jimmy Neesham" id="name" class="validate">
+        <label for="title">Name</label>
+      </div>
+      <div class="input-field">
+        <input type="text" placeholder="e.g. +123654978" id="numbers" class="validate">
+        <label for="title">Number</label>
+      </div>
+      <div class="input-field center">
+        <button class="btn-small">Add Contact</button>
+      </div>
+    </form>
+  </div>
+  <!-- add contact form end -->
+  <script type="text/javascript" src="js/common.js"></script>
+</body>
+
+</html>
